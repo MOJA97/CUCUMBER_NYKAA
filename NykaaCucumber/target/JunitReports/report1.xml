@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="61.495" tests="5" skipped="0" failures="3" errors="0">
+<testcase classname="feature to test Login functionality, product functionality and logout functionality" name="Check login is successful with valid credentials - Example #1.1" time="33.137">
+<system-out><![CDATA[
+Given user is on login page.................................................passed
+When user enters the valid "itsmemojaved@gmail.com".........................passed
+And clicks on login button..................................................passed
+Then user is navigates to the home page.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test Login functionality, product functionality and logout functionality" name="Click the byproduct from MakeUp option - Example #1.1" time="0.137">
+<failure/>
+<system-out><![CDATA[
+Given user in on home page..................................................passed
+When user select the from the makeup product................................undefined
+Then user navigates to new tab of "Makeup Remover" list page................skipped
+]]></system-out>
+</testcase>
+<testcase classname="feature to test Login functionality, product functionality and logout functionality" name="product selection" time="0.031">
+<failure/>
+<system-out><![CDATA[
+Given user is on products page..............................................passed
+When user select the byproduct..............................................undefined
+And user navigates to new tab of chosen product page........................skipped
+When user clicks the add to bag button......................................skipped
+When user clicks the bag icon in the product page...........................skipped
+When user clicks proceed button.............................................skipped
+Then user navigates to the choose address page..............................skipped
+]]></system-out>
+</testcase>
+<testcase classname="feature to test Login functionality, product functionality and logout functionality" name="to enter the address for the delivery - Example #1.1" time="23.202">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[text()='Add New Address']//parent::div&quot;}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-AD1H9CQ', ip: '192.168.43.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Javed\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53660}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 326de3752d972485806dd3d0077857cb
+*** Element info: {Using=xpath, value=//p[text()='Add New Address']//parent::div}">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Add New Address']//parent::div"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-AD1H9CQ', ip: '192.168.43.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Javed\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53660}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 326de3752d972485806dd3d0077857cb
+*** Element info: {Using=xpath, value=//p[text()='Add New Address']//parent::div}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at com.Base_Class_Utils.com.Base_Class.click(Base_Class.java:116)
+	at StepDefinitions.Setup.user_clicks_the_add_new_address_icon(Setup.java:194)
+	at ✽.user clicks the add new address icon(file:///C:/Users/Javed/eclipse-workspace/NykaaCucumber/src/test/resources/Features/Allpages.feature:37)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user is on address page...............................................passed
+When user clicks the add new address icon...................................failed
+And user enters the valid "613009"..........................................skipped
+And user enters the "44"....................................................skipped
+And user enters the "Srinivasapuram"........................................skipped
+When user click the default address checkbox................................skipped
+And user enters the "Mohammed Javed" in the contact details.................skipped
+And user enters the "9342375858"............................................skipped
+And user enters the "itsmemojaved@gmail.com"................................skipped
+When user clicks the ship to this address button............................skipped
+Then user navigates to Payment method page for payment......................skipped
+]]></system-out>
+</testcase>
+<testcase classname="feature to test Login functionality, product functionality and logout functionality" name="logout the profile" time="4.007">
+<system-out><![CDATA[
+Given user navigates to profile home page...................................passed
+When user clicks on logout button...........................................passed
+Then user navigates to home page............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
